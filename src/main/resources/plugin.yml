@@ -1,0 +1,9 @@
+name: ShieldDirty
+version: 1.0.0
+main: com.shielddirty.ShieldDirty
+api-version: 1.18
+author: 'PlaidMrdeer'
+description: '一款简单的屏蔽违禁词的插件'
+commands:
+  sd:
+    description: "主命令"

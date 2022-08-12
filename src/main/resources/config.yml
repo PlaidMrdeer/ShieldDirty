@@ -1,0 +1,10 @@
+punish:
+#是否启用惩罚 启用为true 不启用为false
+  enable: false
+#设置违规多少次开始惩罚
+  max-violation: 3
+  taboo:
+#设置是否启用禁言
+    enable: true
+#设置禁言时长 单位是分钟
+    time: 60
