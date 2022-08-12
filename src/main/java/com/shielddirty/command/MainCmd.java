@@ -210,24 +210,24 @@ public class MainCmd implements CommandExecutor {
     private void tips() {
         if (sender == Bukkit.getConsoleSender()) {
             Bukkit.getConsoleSender().sendMessage("§c命令错误!");
-            Bukkit.getConsoleSender().sendMessage("§esd reload--重载配置文件");
-            Bukkit.getConsoleSender().sendMessage("§esd dirty add <违禁词>--添加违禁词");
-            Bukkit.getConsoleSender().sendMessage("§esd dirty remove <违禁词>--删除违禁词");
-            Bukkit.getConsoleSender().sendMessage("§esd dirty list--列出违禁词列表");
-            Bukkit.getConsoleSender().sendMessage("§esd punish on/off--是否打开惩罚功能");
-            Bukkit.getConsoleSender().sendMessage("§esd punish mv <次数>--设置违规次数");
-            Bukkit.getConsoleSender().sendMessage("§esd punish taboo on/off--是否打开禁言功能");
-            Bukkit.getConsoleSender().sendMessage("§esd punish taboo time <时间>--设置禁言时长");
+            Bukkit.getConsoleSender().sendMessage("§e/sd reload--重载配置文件");
+            Bukkit.getConsoleSender().sendMessage("§e/sd dirty add <违禁词>--添加违禁词");
+            Bukkit.getConsoleSender().sendMessage("§e/sd dirty remove <违禁词>--删除违禁词");
+            Bukkit.getConsoleSender().sendMessage("§e/sd dirty list--列出违禁词列表");
+            Bukkit.getConsoleSender().sendMessage("§e/sd punish on/off--是否打开惩罚功能");
+            Bukkit.getConsoleSender().sendMessage("§e/sd punish mv <次数>--设置违规次数");
+            Bukkit.getConsoleSender().sendMessage("§e/sd punish taboo on/off--是否打开禁言功能");
+            Bukkit.getConsoleSender().sendMessage("§e/sd punish taboo time <时间>--设置禁言时长");
         } else {
             p.sendMessage("§c命令错误!");
-            p.sendMessage("§esd reload--重载配置文件");
-            p.sendMessage("§esd dirty add <违禁词>--添加违禁词");
-            p.sendMessage("§esd dirty remove <违禁词>--删除违禁词");
-            p.sendMessage("§esd dirty list--列出违禁词列表");
-            p.sendMessage("§esd punish on/off--是否打开惩罚功能");
-            p.sendMessage("§esd punish mv <次数>--设置违规次数");
-            p.sendMessage("§esd punish taboo on/off--是否打开禁言功能");
-            p.sendMessage("§esd punish taboo time <时间>--设置禁言时长");
+            p.sendMessage("§e/sd reload--重载配置文件");
+            p.sendMessage("§e/sd dirty add <违禁词>--添加违禁词");
+            p.sendMessage("§e/sd dirty remove <违禁词>--删除违禁词");
+            p.sendMessage("§e/sd dirty list--列出违禁词列表");
+            p.sendMessage("§e/sd punish on/off--是否打开惩罚功能");
+            p.sendMessage("§e/sd punish mv <次数>--设置违规次数");
+            p.sendMessage("§e/sd punish taboo on/off--是否打开禁言功能");
+            p.sendMessage("§e/sd punish taboo time <时间>--设置禁言时长");
         }
     }
 }
