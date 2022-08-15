@@ -20,13 +20,13 @@ public class MainCmd implements CommandExecutor {
     int time;
     CommandSender sender;
     @Override
-    public boolean onCommand(@NotNull CommandSender  sender, @NotNull Command cmd, @NotNull String label, String[] args) {
+    public boolean onCommand(@NotNull CommandSender sender, @NotNull Command cmd, @NotNull String label, String[] args) {
         this.sender = sender;
         if (sender instanceof Player) {
             p = (Player) sender;
         }
-        if (p.isOp() || sender == Bukkit.getConsoleSender()) {
-            if (cmd.getName().equalsIgnoreCase("sd")) {
+        if (cmd.getName().equalsIgnoreCase("sd")) {
+            if (p.isOp() || sender == Bukkit.getConsoleSender()) {
                 if (args.length == 1) {
                     if (args[0].equalsIgnoreCase("reload")) {
                        Config.reloadConfig(ShieldDirty.getPlugin());
@@ -47,9 +47,10 @@ public class MainCmd implements CommandExecutor {
                 } else {
                     tips();
                 }
+            } else {
+                p.sendMessage("§c你没有权限使用此命令!");
             }
-        } else {
-            p.sendMessage("§c你没有权限使用此命令!");
+            return true;
         }
         return false;
     }
