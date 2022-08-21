@@ -35,6 +35,9 @@ public final class ShieldDirty extends JavaPlugin {
         Objects.requireNonNull(getServer().getPluginCommand("sd")).setExecutor(new MainCmd());
 
         Objects.requireNonNull(getServer().getPluginCommand("sd")).setTabCompleter(new CmdTab());
+
+        int pluginId = 16212;
+        Metrics metrics = new Metrics(this, pluginId);
     }
 
     private void say(String say) {
